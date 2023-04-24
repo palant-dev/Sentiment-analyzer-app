@@ -22,8 +22,10 @@ struct ContentView: View {
 
             TextField("Enter Text", text: $inputText)
 
-            Text("Score")
+            Text(score)
         }
+        .font(.largeTitle)
+        .multilineTextAlignment(.center)
         .padding()
     }
 
@@ -32,7 +34,7 @@ struct ContentView: View {
     private func analyzeSentiment(for stringToAnalyze: String) -> String {
 
         tagger.string = stringToAnalyze
-        ///In thi case we want a tuple storing :
+        ///In thi case we want a tuple storing NLTag and the range of the string :
         /// - stringToAnalyze.startIndex refers to the starting character of the sting
         /// - unit is what we want to analyse we can choose both a word or a whole paragraph
         /// - scheme is the type of analysis that we want to run
