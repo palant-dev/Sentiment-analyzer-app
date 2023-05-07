@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E3D3F1C29F7131600710C95 /* Sentiment_analyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3F1B29F7131600710C95 /* Sentiment_analyzerApp.swift */; };
+		9E3D3F1C29F7131600710C95 /* SentimentAnalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3F1B29F7131600710C95 /* SentimentAnalyzerApp.swift */; };
 		9E3D3F1E29F7131600710C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3D3F1D29F7131600710C95 /* ContentView.swift */; };
 		9E3D3F2029F7131700710C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D3F1F29F7131700710C95 /* Assets.xcassets */; };
 		9E3D3F2329F7131700710C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D3F2229F7131700710C95 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E3D3F1829F7131600710C95 /* Sentiment analyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentiment analyzer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E3D3F1B29F7131600710C95 /* Sentiment_analyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment_analyzerApp.swift; sourceTree = "<group>"; };
+		9E3D3F1829F7131600710C95 /* SentimentAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentimentAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3D3F1B29F7131600710C95 /* SentimentAnalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzerApp.swift; sourceTree = "<group>"; };
 		9E3D3F1D29F7131600710C95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9E3D3F1F29F7131700710C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E3D3F2229F7131700710C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		9E3D3F1929F7131600710C95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E3D3F1829F7131600710C95 /* Sentiment analyzer.app */,
+				9E3D3F1829F7131600710C95 /* SentimentAnalyzer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 		9E3D3F1A29F7131600710C95 /* Sentiment analyzer */ = {
 			isa = PBXGroup;
 			children = (
-				9E3D3F1B29F7131600710C95 /* Sentiment_analyzerApp.swift */,
+				9E3D3F1B29F7131600710C95 /* SentimentAnalyzerApp.swift */,
 				9E3D3F1D29F7131600710C95 /* ContentView.swift */,
 				9E3D3F1F29F7131700710C95 /* Assets.xcassets */,
 				9E3D3F2129F7131700710C95 /* Preview Content */,
@@ -70,21 +70,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E3D3F1729F7131600710C95 /* Sentiment analyzer */ = {
+		9E3D3F1729F7131600710C95 /* SentimentAnalyzer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E3D3F2629F7131700710C95 /* Build configuration list for PBXNativeTarget "Sentiment analyzer" */;
+			buildConfigurationList = 9E3D3F2629F7131700710C95 /* Build configuration list for PBXNativeTarget "SentimentAnalyzer" */;
 			buildPhases = (
 				9E3D3F1429F7131600710C95 /* Sources */,
 				9E3D3F1529F7131600710C95 /* Frameworks */,
 				9E3D3F1629F7131600710C95 /* Resources */,
+				9EDAEACF2A08148100F71461 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Sentiment analyzer";
+			name = SentimentAnalyzer;
 			productName = "Sentiment analyzer";
-			productReference = 9E3D3F1829F7131600710C95 /* Sentiment analyzer.app */;
+			productReference = 9E3D3F1829F7131600710C95 /* SentimentAnalyzer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E3D3F1329F7131600710C95 /* Build configuration list for PBXProject "Sentiment analyzer" */;
+			buildConfigurationList = 9E3D3F1329F7131600710C95 /* Build configuration list for PBXProject "SentimentAnalyzer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E3D3F1729F7131600710C95 /* Sentiment analyzer */,
+				9E3D3F1729F7131600710C95 /* SentimentAnalyzer */,
 			);
 		};
 /* End PBXProject section */
@@ -132,13 +133,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9EDAEACF2A08148100F71461 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E3D3F1429F7131600710C95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9E3D3F1E29F7131600710C95 /* ContentView.swift in Sources */,
-				9E3D3F1C29F7131600710C95 /* Sentiment_analyzerApp.swift in Sources */,
+				9E3D3F1C29F7131600710C95 /* SentimentAnalyzerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E3D3F1329F7131600710C95 /* Build configuration list for PBXProject "Sentiment analyzer" */ = {
+		9E3D3F1329F7131600710C95 /* Build configuration list for PBXProject "SentimentAnalyzer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E3D3F2429F7131700710C95 /* Debug */,
@@ -329,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E3D3F2629F7131700710C95 /* Build configuration list for PBXNativeTarget "Sentiment analyzer" */ = {
+		9E3D3F2629F7131700710C95 /* Build configuration list for PBXNativeTarget "SentimentAnalyzer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E3D3F2729F7131700710C95 /* Debug */,

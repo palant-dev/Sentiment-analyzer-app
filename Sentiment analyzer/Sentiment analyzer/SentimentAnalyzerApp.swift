@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Sentiment_analyzerApp: App {
+struct SentimentAnalyzerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
